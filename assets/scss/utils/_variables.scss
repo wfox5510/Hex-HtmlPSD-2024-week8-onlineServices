@@ -76,6 +76,36 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
+$primary-10: #E5F4FF;
+$primary-40: #99CFFF;
+$primary-60: #66B1FF;
+$primary-80: #3F95FF;
+$primary-100: #0068FF;
+$primary-120: #003BB7;
+
+$success-10: #F0FCD1;
+$success-20: #DDFAA5;
+$success-100: #7CD31F;
+$success-120: #48970F;
+
+$info-10: #D4F9FE;
+$info-20: #A9EFFE;
+$info-100: #2AAFFC;
+$info-120: #1566B5;
+
+$danger-10: #FFE0D7;
+$danger-20: #FFBBB0;
+$danger-100: #FF3A55;
+$danger-120: #B71D4F;
+
+$neutral-0: #FFFFFF;
+$neutral-10: #F9F9F9;
+$neutral-40: #ECECEC;
+$neutral-60: #909090;
+$neutral-80: #4B4B4B;
+$neutral-100: #000000;
+
+
 $blue-100: tint-color($blue, 80%) !default;
 $blue-200: tint-color($blue, 60%) !default;
 $blue-300: tint-color($blue, 40%) !default;
@@ -298,7 +328,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+//$primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -621,7 +651,7 @@ $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
-$font-weight-bold:            700 !default;
+$font-weight-bold:            600 !default; //700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
