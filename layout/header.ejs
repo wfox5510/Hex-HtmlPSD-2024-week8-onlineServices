@@ -1,4 +1,44 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<section class="pt-xl-10">
+  <div class="container-xl">
+    <nav class="navbar navbar-shadow py-xl-4 px-xl-10 navbar-expand-xl rounded-xl-pill">
+      <a href="../pages/index.html" class="navbar-brand align-bottom me-6"><img src="../assets/images/logo.png" alt="logo" width="200" height="auto"></a>
+      <div class="d-none d-xl-flex align-items-center w-100">
+        <a class="me-6" data-bs-toggle="collapse" href="#collapseNavItem" role="button" aria-expanded="false" aria-controls="collapseExample">
+          探索 <span class="material-symbols-outlined align-bottom">
+            keyboard_arrow_down
+          </span>
+        </a>
+        <div class="collapse" id="collapseNavItem">
+          <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+        <form class="searchbar me-auto">
+          <span class="material-symbols-outlined searchbar-ic">
+            search
+          </span>
+          <input class="form-control rounded-4" type="search" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search">
+          <button class="btn btn-sm btn-primary-100" type="submit">搜尋</button>
+        </form>
+
+        <a href="#" class="position-relative">
+          <span class="material-symbols-outlined">
+            notifications
+          </span> <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-primary-100 p-1"><span class="visually-hidden">unread messages</span></span>
+        </a>
+        <a href="#" class="position-relative">
+          <span class="material-symbols-outlined">
+            shopping_cart
+            </span> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-100">2<span class="visually-hidden">unread messages</span></span>
+        </a>
+        <button type="button" class="btn btn-primary-100">登入/註冊</button>
+      </div>
+      <!-- Nav 手機板排版 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-auto" id="navbarText">
+      </div>
+    </nav>
+  </div>
+</section>
