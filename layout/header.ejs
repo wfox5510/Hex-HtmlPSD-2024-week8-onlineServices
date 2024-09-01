@@ -1,44 +1,258 @@
-<section class="pt-xl-10">
+<header class="pt-xl-10 mb-xl-4">
   <div class="container-xl">
-    <nav class="navbar navbar-shadow py-xl-4 px-xl-10 navbar-expand-xl rounded-xl-pill">
-      <a href="../pages/index.html" class="navbar-brand align-bottom me-6"><img src="../assets/images/logo.png" alt="logo" width="200" height="auto"></a>
-      <div class="d-none d-xl-flex align-items-center w-100">
-        <a class="me-6" data-bs-toggle="collapse" href="#collapseNavItem" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <nav class="navbar navbar-shadow py-xl-4 px-xl-10 navbar-expand-xl rounded-xl-pill justify-content-start">
+      <a href="../pages/index.html" class="navbar-brand align-bottom me-auto me-xl-6">
+        <picture>
+          <source media="(min-width: 576px)" srcset="../assets/images/logo.png" width="200" height="auto">
+          <img src="../assets/images/logo.png" alt="logo" width="125" height="auto">
+        </picture>
+      </a>
+      <!--Nav探索選單-->
+      <div class="d-none d-xl-flex align-items-center me-auto">
+        <a class="me-6" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+          aria-expanded="false">
           探索 <span class="material-symbols-outlined align-bottom">
             keyboard_arrow_down
           </span>
         </a>
-        <div class="collapse" id="collapseNavItem">
-          <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-          </div>
+        <div class="dropdown-menu dropdown-nav-xl ">
+          <ul class="list-unstyled d-flex rounded-3 p-3 h-100 m-0">
+            <li>
+              <div class="dropdown-list border-right">
+                <h2 href="#" class="d-block fs-title py-3 px-6 mb-2">探索全部</h2>
+                <ul class="list-unstyled">
+                  <li><a class="list-item" href="#">音樂</a></li>
+                  <li><a class="list-item" href="#">攝影</a></li>
+                  <li><a class="list-item" href="#">程式</a></li>
+                  <li><a class="list-item" href="#">程式</a></li>
+                  <li><a class="list-item" href="#">藝術</a></li>
+                  <li><a class="list-item" href="#">人文</a></li>
+                  <li><a class="list-item" href="#">行銷</a></li>
+                  <li><a class="list-item" href="#">投資理財</a></li>
+                  <li><a class="list-item" href="#">心靈成長</a></li>
+                  <li><a class="list-item" href="#">職場技能</a></li>
+                  <li><a class="list-item" href="#">生活品味</a></li>
+                  <li><a class="list-item" href="#">投資理財</a></li>
+                  <li><a class="list-item" href="#">心靈成長</a></li>
+                  <li><a class="list-item" href="#">職場技能</a></li>
+                  <li><a class="list-item" href="#">生活品味</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <ul class="list-unstyled dropdown-list border-right">
+                <h2 href="#" class="d-block fs-title py-3 px-6 mb-2">所有程式</h2>
+                <li><a class="list-item" href="#">程式入門</a></li>
+                <li><a class="list-item" href="#">網頁前端</a></li>
+                <li><a class="list-item" href="#">網頁後端</a></li>
+                <li><a class="list-item" href="#">網站架設</a></li>
+                <li><a class="list-item" href="#">資訊安全</a></li>
+                <li><a class="list-item" href="#">程式語言</a></li>
+                <li><a class="list-item" href="#">遊戲開發</a></li>
+                <li><a class="list-item" href="#">資料科學</a></li>
+                <li><a class="list-item" href="#">人工智慧</a></li>
+                <li><a class="list-item" href="#">量化分析</a></li>
+              </ul>
+            </li>
+            <li class="px-6">
+              <h2 class="fs-title mb-4"><img src="../assets/images/icons/ic_fire.png" alt="icon" width="24" height="24"
+                  class="me-2">熱門網頁前端課程</h2>
+              <ul class="list-unstyled">
+                <li class="product-card-sm border-top">
+                  <img src="../assets/images/course-5.png" alt="course" class="product-card-img">
+                  <div class="product-card-content">
+                    <div class="product-card-header">
+                      <h3 class="fs-title">小白也會!從零開始學習Python程式設計</h3>
+                    </div>
+                    <div class="product-card-body">
+                      <img src="../assets/images/avatar-2.png" alt="avatar" class="avatar me-2">
+                      <span class="text-neutral-80 me-auto">kelly Hsu</span>
+                      <div class="d-flex flex-column text-end">
+                        <span class="fw-bold fw-bolder text-primary-100">NT$ 2,480</span>
+                        <span class="body-sm text-muted"><del>NT$ 3,200</del></span>
+                      </div>
+                    </div>
+                    <div class="product-card-footer border-top fs-body-sm">
+                      <span class="text-neutral-80 me-auto ">已有 420 位同學加入</span>
+                      <div>
+                        <span class="material-symbols-outlined text-warning icon-fill">
+                          grade
+                        </span>
+                        <span class="fw-semibold">4.0</span>
+                        <span>(333)</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-card-sm border-top">
+                  <img src="../assets/images/course-5.png" alt="course" class="product-card-img">
+                  <div class="product-card-content">
+                    <div class="product-card-header">
+                      <h3 class="fs-title">小白也會!從零開始學習Python程式設計</h3>
+                    </div>
+                    <div class="product-card-body">
+                      <img src="../assets/images/avatar-2.png" alt="avatar" class="avatar me-2">
+                      <span class="text-neutral-80 me-auto">kelly Hsu</span>
+                      <div class="d-flex flex-column text-end">
+                        <span class="fw-bold fw-bolder text-primary-100">NT$ 2,480</span>
+                        <span class="body-sm text-muted"><del>NT$ 3,200</del></span>
+                      </div>
+                    </div>
+                    <div class="product-card-footer border-top fs-body-sm">
+                      <span class="text-neutral-80 me-auto ">已有 420 位同學加入</span>
+                      <div>
+                        <span class="material-symbols-outlined text-warning icon-fill">
+                          grade
+                        </span>
+                        <span class="fw-semibold">4.0</span>
+                        <span>(333)</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-card-sm border-top">
+                  <img src="../assets/images/course-5.png" alt="course" class="product-card-img">
+                  <div class="product-card-content">
+                    <div class="product-card-header">
+                      <h3 class="fs-title">小白也會!從零開始學習Python程式設計</h3>
+                    </div>
+                    <div class="product-card-body">
+                      <img src="../assets/images/avatar-2.png" alt="avatar" class="avatar me-2">
+                      <span class="text-neutral-80 me-auto">kelly Hsu</span>
+                      <div class="d-flex flex-column text-end">
+                        <span class="fw-bold fw-bolder text-primary-100">NT$ 2,480</span>
+                        <span class="body-sm text-muted"><del>NT$ 3,200</del></span>
+                      </div>
+                    </div>
+                    <div class="product-card-footer border-top fs-body-sm">
+                      <span class="text-neutral-80 me-auto ">已有 420 位同學加入</span>
+                      <div>
+                        <span class="material-symbols-outlined text-warning icon-fill">
+                          grade
+                        </span>
+                        <span class="fw-semibold">4.0</span>
+                        <span>(333)</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <form class="searchbar me-auto">
+        <form class="searchbar">
           <span class="material-symbols-outlined searchbar-ic">
             search
           </span>
           <input class="form-control rounded-4" type="search" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search">
           <button class="btn btn-sm btn-primary-100" type="submit">搜尋</button>
         </form>
-
-        <a href="#" class="position-relative">
+      </div>
+      <a href="#" class="py-2 px-3 me-4">
+        <div class="position-relative">
           <span class="material-symbols-outlined">
             notifications
-          </span> <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-primary-100 p-1"><span class="visually-hidden">unread messages</span></span>
-        </a>
-        <a href="#" class="position-relative">
+          </span> <span
+            class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-primary-100 p-1"><span
+              class="visually-hidden">unread messages</span></span>
+        </div>
+      </a>
+      <a href="#" class="py-2 px-3 me-4">
+        <div class="position-relative">
           <span class="material-symbols-outlined">
             shopping_cart
-            </span> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-100">2<span class="visually-hidden">unread messages</span></span>
-        </a>
-        <button type="button" class="btn btn-primary-100">登入/註冊</button>
-      </div>
-      <!-- Nav 手機板排版 -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          </span> <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-100">2<span
+              class="visually-hidden">unread messages</span></span>
+        </div>
+      </a>
+      <button type="button" class="btn btn-primary-100 d-none d-xl-block">登入/註冊</button>
+      <!-- Nav 手機板 -->
+      <button class="navbar-toggler p-2 rounded-0 border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse me-auto" id="navbarText">
+      <!-- Nav offcanvas探索選單 -->
+      <div class="offcanvas offcanvas-end offcanvas-nav p-4 d-flex d-xl-none" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <a href="#" class="d-block fs-title py-3 px-6 mb-2">探索全部</a>
+        <div class="offcanvas-body position-relative p-0">
+          <ul class="list-unstyled">
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                音樂
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                攝影
+              </a>
+            </li>
+            <li>
+              <a class="list-item active" data-bs-toggle="dropdown" aria-expanded="false">
+                程式
+              </a>
+              <ul class="dropdown-menu dropdown-menu-fill">
+                <li class="mb-2"><a href="#" class="list-back">所有程式</a></li>
+                <li><a href="#" class="list-item">程式入門</a></li>
+                <li><a href="#" class="list-item">網頁前端</a></li>
+                <li><a href="#" class="list-item">網頁後端</a></li>
+                <li><a href="#" class="list-item">網站架設</a></li>
+                <li><a href="#" class="list-item">資訊安全</a></li>
+                <li><a href="#" class="list-item">遊戲開發</a></li>
+                <li><a href="#" class="list-item">資料科學</a></li>
+                <li><a href="#" class="list-item">人工智慧</a></li>
+                <li><a href="#" class="list-item">量化分析</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                程式
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                藝術
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                人文
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                行銷
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                投資理財
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                心靈成長
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                職場技能
+              </a>
+            </li>
+            <li>
+              <a class="list-item" data-bs-toggle="dropdown" aria-expanded="false">
+                生活品味
+              </a>
+            </li>
+          </ul>
+          <div class="offcanvas-footer">
+            <button type="button" class="btn btn-primary-100 w-100">登入/註冊</button>
+          </div>
+        </div>
+        <!-- ------------------------------------------------ -->
       </div>
     </nav>
   </div>
-</section>
+</header>
