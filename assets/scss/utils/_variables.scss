@@ -482,6 +482,7 @@ $spacers: (
   11: $spacer * 2.75,
   12: $spacer * 3,
   15: $spacer * 3.75,
+  18: $spacer * 4.5,
   20: $spacer * 5,
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -503,7 +504,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+$body-color:                $neutral-80 !default;//$gray-900 !default;
 $body-bg:                   $white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
@@ -1255,7 +1256,7 @@ $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefi
 
 $nav-pills-border-radius:           var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color:       $component-active-color !default;
-$nav-pills-link-active-bg:          $component-active-bg !default;
+$nav-pills-link-active-bg:          $primary-100 !default;//$component-active-bg !default;
 
 $nav-underline-gap:                 1rem !default;
 $nav-underline-border-width:        .125rem !default;

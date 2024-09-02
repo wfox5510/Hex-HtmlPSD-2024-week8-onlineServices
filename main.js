@@ -13,12 +13,6 @@ var swiper = new Swiper(".bannerSwiper", {
     clickable: true,
   },
   breakpoints: {
-    320: {  //当屏幕宽度大于等于320
-
-    },
-    768: {  //当屏幕宽度大于等于768 
-
-    },
     1200: {  //当屏幕宽度大于等于1280
       navigation: {
         nextEl: ".bannerSwiper-next",
@@ -27,3 +21,14 @@ var swiper = new Swiper(".bannerSwiper", {
     }
   }
 });
+
+var swiper = new Swiper(".navtabSwiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 12,
+  centeredSlides: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+})

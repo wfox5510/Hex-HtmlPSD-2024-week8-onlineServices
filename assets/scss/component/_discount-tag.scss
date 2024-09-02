@@ -1,0 +1,13 @@
+.discount-tag{
+  position: absolute;
+  border-radius: $border-radius-pill;
+  padding: 8px 12px;
+  top: calc(0% + 16px);
+  left: calc(0% + 16px);
+}
+
+.discount-tag-primary{
+  background: $primary-10;
+  color: $primary-100;
+  font-weight: $font-weight-bold;
+}
