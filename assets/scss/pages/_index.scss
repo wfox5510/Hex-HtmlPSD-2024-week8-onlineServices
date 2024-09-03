@@ -1,8 +1,10 @@
 .bannerSwiper {
   .swiper-slide {
-    max-width: 1600px;
-
+    width: 100%;
+    overflow: hidden;
     @include media-breakpoint-up(xl) {
+      width: 1600px;
+      max-width: calc(100% - 56px);
       border-radius: 80px;
     }
   }
@@ -24,28 +26,35 @@
       height: "auto";
     }
   }
-  .swiper-pagination{
+
+  .swiper-pagination {
     bottom: calc(0% + 66px);
   }
 }
 
-.swiper-nav {
-  position: absolute;
-  max-width: 1656px;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1200;
 
-  .bannerSwiper-prev,
-  .bannerSwiper-next {
-    padding: 16px;
-    background: $neutral-0;
-  }
+
+.bannerSwiper-prev{
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  padding: 16px;
+  background: $neutral-0;
+}
+.bannerSwiper-next {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  padding: 16px;
+  background: $neutral-0;
 }
 
-.banner-title{
+
+.banner-title {
   display: flex;
   align-items: center;
   position: absolute;
@@ -55,11 +64,13 @@
   max-width: 415px;
   padding: 8px 24px 8px 8px;
   background: $neutral-0;
-  @include media-breakpoint-up(xl){
+
+  @include media-breakpoint-up(xl) {
     bottom: calc(0% + 144px);
   }
-} 
-.banner-footer{
+}
+
+.banner-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,29 +78,31 @@
   bottom: 0%;
   background: $primary-100;
   width: 100%;
-  @include media-breakpoint-up(xl){
+
+  @include media-breakpoint-up(xl) {
     width: 100%;
     max-width: 872px;
     border-top-right-radius: 80px;
   }
 }
 
-.banner-deco::before{
- @include media-breakpoint-up(xxl){
-  content: "";
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  z-index: 1400;
-  background-image: url(../images/deco/flower-4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  top: -50%;
-  left: -20%;
- }
+.banner-deco::before {
+  @include media-breakpoint-up(xxl) {
+    content: "";
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1400;
+    background-image: url(../images/deco/flower-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -50%;
+    left: -20%;
+  }
 }
 
-.navtabSwiper{
+.navtabSwiper {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -108,7 +121,7 @@
 
   .swiper-slide {
     width: auto;
-    flex-grow:1;
+    flex-grow: 1;
   }
 
 }
