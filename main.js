@@ -32,3 +32,18 @@ var swiper = new Swiper(".navtabSwiper", {
     clickable: true,
   },
 })
+
+var swiper = new Swiper(".mobileSwiper-paginate", {
+  pagination: {
+    el: ".mobileSwiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: "2",
+      spaceBetween: 12,
+    }
+  }
+})
+var swiper = new Swiper(".mobileSwiper", {
+})

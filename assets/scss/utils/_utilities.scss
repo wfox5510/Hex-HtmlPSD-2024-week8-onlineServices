@@ -20,3 +20,21 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
         (responsive: true),
       ),
     ));
+
+.deco-flower-top-left::before{
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background-image: url(../images/deco/flower-2.png);
+  background-position: right;
+  top: 0%;
+  left: 0%;
+  width: 100px;
+  height: 200px;
+  background-size: cover;
+  @include media-breakpoint-up(lg){
+    width: calc(560px * .5);
+    height: 560px;
+  }
+}
