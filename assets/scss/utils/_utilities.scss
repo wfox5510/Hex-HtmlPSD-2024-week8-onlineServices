@@ -38,3 +38,15 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
     height: 560px;
   }
 }
+.deco-header::before{
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background-image: url(../images/deco/flower-1.png);
+  top: 0%;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-40%,-40%);
+}
