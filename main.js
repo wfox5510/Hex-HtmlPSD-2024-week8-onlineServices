@@ -45,11 +45,26 @@ var swiper = new Swiper(".mobileSwiper-paginate", {
     }
   }
 })
-var swiper = new Swiper(".mobileSwiper", {
-})
-var swiper = new Swiper(".swiperFill", {
+
+var swiper = new Swiper(".swiperHotCourse", {
   slidesPerView: "auto",
-  centeredSlides: true,
   spaceBetween: 24,
   centeredSlides: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    992 :{
+      navigation: {
+        nextEl: ".swiperHotCourse-next",
+        prevEl: ".swiperHotCourse-prev",
+      },
+    }
+  }
+})
+
+var swiper = new Swiper(".mobileSwiper-twoRow", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
 })

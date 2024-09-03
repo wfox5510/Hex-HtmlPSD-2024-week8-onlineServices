@@ -6,6 +6,8 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
               3: 12px,
               4: 16px,
               5: 20px,
+              10: 40px,
+              20: 80px,
             ),
           ),
         ),
