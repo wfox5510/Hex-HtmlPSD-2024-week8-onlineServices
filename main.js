@@ -15,8 +15,8 @@ var swiper = new Swiper(".bannerSwiper", {
   breakpoints: {
     1200: {  //当屏幕宽度大于等于1280
       navigation: {
-        nextEl: ".bannerSwiper-next",
-        prevEl: ".bannerSwiper-prev",
+        nextEl: ".bannerSwiperNav-next",
+        prevEl: ".bannerSwiperNav-prev",
       },
     }
   }

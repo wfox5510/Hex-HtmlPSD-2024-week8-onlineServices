@@ -33,25 +33,21 @@
 }
 
 
-
-.bannerSwiper-prev{
-  position: absolute;
-  z-index: 1000;
-  top: 50%;
+.bannerSwiperNav-prev{
   left: 0%;
-  transform: translate(0%, -50%);
-  padding: 16px;
-  background: $neutral-0;
 }
-.bannerSwiper-next {
+.bannerSwiperNav-next{
+   right: 0%;
+}
+.bannerSwiperNav-prev,.bannerSwiperNav-next{
   position: absolute;
-  z-index: 1000;
   top: 50%;
-  right: 0%;
+  z-index: 1000;
   transform: translate(0%, -50%);
   padding: 16px;
   background: $neutral-0;
 }
+
 
 
 .banner-title {
