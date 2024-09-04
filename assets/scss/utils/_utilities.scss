@@ -52,3 +52,7 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
   height: 60px;
   transform: translate(-40%,-40%);
 }
+
+.w-auto{
+  width: auto;
+}
