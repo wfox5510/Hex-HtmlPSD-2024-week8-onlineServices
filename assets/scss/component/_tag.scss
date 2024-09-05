@@ -1,0 +1,24 @@
+.tag-sm{
+  padding: 4px 12px;
+  border-radius: $border-radius-pill;
+}
+
+.tag{
+  position: absolute;
+  border-radius: $border-radius-pill;
+  padding: 8px 12px;
+  top: calc(0% + 16px);
+  left: calc(0% + 16px);
+}
+
+.tag-primary{
+  background: $primary-10;
+  color: $primary-100;
+  font-weight: $font-weight-bold;
+}
+
+
+.tag-neutral{
+  background: $neutral-40;
+  color: $neutral-80;
+}

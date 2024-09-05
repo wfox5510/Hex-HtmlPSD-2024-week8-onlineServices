@@ -1,0 +1,58 @@
+$utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rounded"),
+        (responsive: true,
+          values: map-merge(map-get(map-get($utilities, "rounded"), "values"),
+            (1: 4px,
+              2: 8px,
+              3: 12px,
+              4: 16px,
+              5: 20px,
+              10: 40px,
+              20: 80px,
+            ),
+          ),
+        ),
+      ),
+      "font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true),
+      ),
+      "font-weight": map-merge(map-get($utilities, "font-weight"),
+        (responsive: true),
+      ),
+      "color": map-merge(map-get($utilities, "color"),
+        (responsive: true),
+      ),
+    ));
+
+.deco-flower-top-left::before{
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background-image: url(../images/deco/flower-2.png);
+  background-position: right;
+  top: 0%;
+  left: 0%;
+  width: 100px;
+  height: 200px;
+  background-size: cover;
+  @include media-breakpoint-up(lg){
+    width: calc(560px * .5);
+    height: 560px;
+  }
+}
+.deco-header::before{
+  content: "";
+  z-index: -1;
+  display: block;
+  position: absolute;
+  background-image: url(../images/deco/flower-1.png);
+  top: 0%;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-40%,-40%);
+}
+
+.w-auto{
+  width: auto;
+}

@@ -1,0 +1,14 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  letter-spacing: .02em;
+}
+
+.material-symbols-outlined{
+  vertical-align: bottom;
+}
+.material-symbols-outlined.icon-fill {
+  font-variation-settings:
+    'FILL' 1,
+}
