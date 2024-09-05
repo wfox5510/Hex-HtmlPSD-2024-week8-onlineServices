@@ -24,12 +24,15 @@ var swiper = new Swiper(".bannerSwiper", {
 
 var swiper = new Swiper(".navtabSwiper", {
   slidesPerView: "auto",
-  centeredSlides: true,
   spaceBetween: 12,
   centeredSlides: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".navtabSwiper-button-next",
+    prevEl: ".navtabSwiper-button-prev",
   },
 })
 

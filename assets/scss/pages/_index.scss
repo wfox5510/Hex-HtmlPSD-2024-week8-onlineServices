@@ -141,6 +141,23 @@
   }
 }
 
+.bg-hotCourse {
+  position: relative;
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 480px;
+    background-image: url(../images/deco/flower-3.png);
+    background-position: right;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .swiperHotCourse {
   .swiper-slide {
     width: auto;
@@ -167,20 +184,22 @@
   }
 }
 
-.category{
+.category {
   width: calc(100% - 24px);
   max-width: 1656px;
+
   .category-card {
     display: flex;
     align-items: center;
     padding: 20px;
     width: 272px;
-    @include media-breakpoint-up(lg){
-      width:100%;
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
     }
   }
 
-  .deco-category-header{
+  .deco-category-header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -188,3 +207,13 @@
   }
 }
 
+.bg-teacher {
+  @include media-breakpoint-up(md) {
+    position: relative;
+    z-index: -100;
+    background-image: url(../images/deco/line-1.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: contain;
+  }
+}

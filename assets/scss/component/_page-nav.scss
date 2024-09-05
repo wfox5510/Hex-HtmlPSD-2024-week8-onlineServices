@@ -1,0 +1,8 @@
+.page-nav{
+  li+li::before{
+    content: "/";
+    font-size: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}

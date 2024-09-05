@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+  <section class="py-10 py-lg-20 bg-course-banner">
+    <div class="container bg-course-banner-sub">
+      <ul class="d-flex list-unstyled page-nav mb-4 mb-lg-10">
+        <li><a href="#">所有課程</a></li>
+        <li><a href="#">課程程式</a></li>
+      </ul>
+      <h2 class="fs-3 fs-lg-1 mb-10">程式課程</h2>
+      <div class="course-navtag swiper navtabSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#" class="btn btn-primary-100 py-3 px-4 rounded">所有程式</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">網頁開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">資料科學</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">行動版開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">程式語言</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">遊戲開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">資料庫設計與開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">軟體測試</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">軟體開發工具</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">無程式碼開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">無程式碼開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">無程式碼開發</a></div>
+          <div class="swiper-slide"><a href="#" class="btn border py-3 px-4 rounded">無程式碼開發</a></div>
+        </div>
+        <span class="material-symbols-outlined navtabSwiper-button-next d-none d-lg-block p-3 ps-7 bg-primary-10">
+          chevron_right
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <%- include('./layout/footer'); -%>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>
