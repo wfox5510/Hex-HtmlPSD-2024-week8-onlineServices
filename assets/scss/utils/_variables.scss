@@ -439,7 +439,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  false !default; //$enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;  //false !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -468,6 +468,10 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  n4: $spacer * -1,
+  n3: $spacer * -.75,
+  n2: $spacer * -.5,
+  n1: $spacer * -.25,
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,

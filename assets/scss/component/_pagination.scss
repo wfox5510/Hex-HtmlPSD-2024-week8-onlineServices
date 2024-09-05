@@ -1,0 +1,20 @@
+.pagination{
+  gap: 8px;
+  .page-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px ;
+  }
+}
+
+.pagination-break-md{
+  @include media-breakpoint-up(md){
+    .page-link{
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

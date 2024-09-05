@@ -21,6 +21,15 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
       "color": map-merge(map-get($utilities, "color"),
         (responsive: true),
       ),
+      "width": map-merge(map-get($utilities, "width"),
+        (responsive: true),
+      ),
+      "height": map-merge(map-get($utilities, "height"),
+        (responsive: true),
+      ),
+      "border-bottom": map-merge(map-get($utilities, "border-bottom"),
+        (responsive: true),
+      ),
     ));
 
 .deco-flower-top-left::before{
@@ -55,4 +64,12 @@ $utilities: map-merge($utilities, ("rounded": map-merge(map-get($utilities, "rou
 
 .w-auto{
   width: auto;
+}
+
+.shadow-media{
+  &-md{
+    @include media-breakpoint-up(md){
+      box-shadow: 0px 25px 50px -12px #0000001F;
+    }
+  }
 }
