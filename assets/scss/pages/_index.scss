@@ -168,35 +168,23 @@
 }
 
 .category{
+  width: calc(100% - 24px);
+  max-width: 1656px;
   .category-card {
     display: flex;
     align-items: center;
-    width: 272px;
     padding: 20px;
+    width: 272px;
+    @include media-breakpoint-up(lg){
+      width:100%;
+    }
   }
 
   .deco-category-header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    &::before{
-      content: "";
-      display: block;
-      width: 80px;
-      height: 80px;
-      background-image: url(../images/deco/polygon-1.png);
-      background-repeat: no-repeat;
-    }
-    &::after{
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-      height: 98px;
-      background-image: url(../images/deco/line-2.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+    position: relative;
   }
 }
 
