@@ -53,12 +53,8 @@ var swiper = new Swiper(".swiperHotCourse", {
   slidesPerView: "auto",
   spaceBetween: 24,
   centeredSlides: false,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   breakpoints: {
-    992 :{
+    992: {
       navigation: {
         nextEl: ".swiperHotCourse-next",
         prevEl: ".swiperHotCourse-prev",
@@ -72,4 +68,17 @@ var swiper = new Swiper(".mobileSwiper-twoRow", {
   spaceBetween: 24,
 })
 
+var swiper = new Swiper(".swiperHotCategory", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  centeredSlides: false,
+  navigation: {
+    nextEl: ".swiperHotCategory-next",
+    prevEl: ".swiperHotCategory-prev",
+  },
+  pagination: {
+    el: ".swiperHotCategory-pagination",
+    clickable: true,
+  },
+})
 
